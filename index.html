@@ -1,199 +1,69 @@
 <!DOCTYPE html>
 <html lang="sw">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>TMCHIKA Installation Technician</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #07111f;
-      color: white;
-    }
-
-    .header {
-      padding: 25px 20px;
-      background: linear-gradient(135deg, #087f5b, #064e3b);
-      text-align: center;
-      border-radius: 0 0 25px 25px;
-    }
-
-    .logo {
-      width: 85px;
-      height: 85px;
-      background: white;
-      color: #087f5b;
-      border-radius: 50%;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .header h1 {
-      margin-top: 15px;
-      font-size: 25px;
-    }
-
-    .header p {
-      margin-top: 8px;
-      color: #d1fae5;
-    }
-
-    .container {
-      padding: 20px;
-    }
-
-    .welcome {
-      margin-bottom: 20px;
-    }
-
-    .welcome h2 {
-      font-size: 22px;
-      margin-bottom: 8px;
-    }
-
-    .welcome p {
-      color: #b8c4d3;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-
-    .service {
-      background: #111c2d;
-      padding: 20px 12px;
-      border-radius: 18px;
-      text-align: center;
-      border: 1px solid #23344d;
-    }
-
-    .service .icon {
-      font-size: 35px;
-      margin-bottom: 10px;
-    }
-
-    .service h3 {
-      font-size: 15px;
-    }
-
-    .contact {
-      margin-top: 22px;
-      background: #0d6b4d;
-      padding: 22px;
-      border-radius: 20px;
-      text-align: center;
-    }
-
-    .contact h2 {
-      margin-bottom: 10px;
-    }
-
-    .button {
-      display: block;
-      margin-top: 12px;
-      padding: 14px;
-      background: white;
-      color: #075e42;
-      text-decoration: none;
-      border-radius: 12px;
-      font-weight: bold;
-    }
-
-    .footer {
-      text-align: center;
-      color: #8996a8;
-      padding: 25px 10px;
-      font-size: 13px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TJMC TECH - 0614687714</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui}
+body{background:#f5f6ff;color:#111}
+.header{background:#3D47B0;color:white;padding:24px;text-align:center;border-radius:0 0 24px 24px}
+.btn{display:block;width:92%;margin:10px auto;padding:16px;border-radius:14px;text-align:center;text-decoration:none;font-weight:bold}
+.call{background:#10B981;color:white}
+.wa{background:#25D366;color:white}
+.mpesa{background:#FFCC00;color:#000}
+.card{background:white;margin:14px;padding:16px;border-radius:18px;box-shadow:0 4px 12px rgba(0,0,0,.07)}
+.price{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #eee}
+input,select,textarea{width:100%;padding:13px;margin:7px 0;border:1px solid #ddd;border-radius:12px}
+.submit{background:#3D47B0;color:white;border:none;padding:15px;border-radius:12px;width:100%;font-weight:bold;font-size:16px}
+</style>
 </head>
-
 <body>
+<div class="header">
+<h1>TJMC TECH</h1>
+<p>Fundi TV • Dish • Decoder</p>
+<p>📞 0614687714 - Serengeti Mara
+</div>
 
-  <div class="header">
-    <div class="logo">TM</div>
+<a class="btn call" href="tel:0614687714">📞 PIGA: 0614687714</a>
+<a class="btn wa" href="https://wa.me/255613417714">💬 WHATSAPP</a>
+<a class="btn mpesa" href="#">💰 M-PESA: 0614687714</a>
 
-    <h1>TMCHIKA</h1>
+<div class="card">
+<h3>💲 Bei Zetu Halisi</h3>
+<div class="price"><span>TV Kufunga Upya</span><b>25k - 30k</b></div>
+<div class="price"><span>Dish Kufunga Upya</span><b>25k - 30k</b></div>
+<div class="price"><span>Decoder Kufunga Upya</span><b>25k - 30k</b></div>
+<div class="price"><span>Repair (TV/Dish/Decoder)</span><b>15,000/=</b></div>
+<p style="font-size:12px;color:#666;margin-top:8px">* Bei inategemea umbali na ukubwa wa kazi</p>
+</div>
 
-    <p>TV & DECODERS INSTALLATION TECHNICIAN</p>
-  </div>
+<div class="card">
+<h3>🛠️ Omba Fundi Sasa</h3>
+<input id="jina" placeholder="Jina lako">
+<input id="mtaa" placeholder="Mtaa - mf Igoma, Nyamagana">
+<select id="huduma">
+<option>Kufunga Upya - 25k-30k</option>
+<option>Repair - 15k</option>
+</select>
+<textarea id="maelezo" placeholder="Eleza tatizo"></textarea>
+<button class="submit" onclick="tuma()">TUMA WHATSAPP</button>
+</div>
 
-  <div class="container">
+<div class="card" style="text-align:center;font-size:12px;color:#666">
+© 2026 TJMC TECH | 0614687714 | Serengeti Mara
+</div>
 
-    <div class="welcome">
-      <h2>Karibu TMCHIKA 👋</h2>
-      <p>
-        Huduma bora za ufungaji, marekebisho na usimamizi wa TV,
-        Decoder, Satellite na Wi-Fi.
-      </p>
-    </div>
-
-    <div class="services">
-
-      <div class="service">
-        <div class="icon">📡</div>
-        <h3>Satellite Installation</h3>
-      </div>
-
-      <div class="service">
-        <div class="icon">📺</div>
-        <h3>TV Installation</h3>
-      </div>
-
-      <div class="service">
-        <div class="icon">🛰️</div>
-        <h3>Decoder Installation</h3>
-      </div>
-
-      <div class="service">
-        <div class="icon">📶</div>
-        <h3>Wi-Fi Installation</h3>
-      </div>
-
-      <div class="service">
-        <div class="icon">🔧</div>
-        <h3>TV & Decoder Repair</h3>
-      </div>
-
-      <div class="service">
-        <div class="icon">🏠</div>
-        <h3>Wall TV Mounting</h3>
-      </div>
-
-    </div>
-
-    <div class="contact">
-      <h2>Wasiliana Nasi</h2>
-      <p>TMCHIKA Installation Technician</p>
-
-      <a class="button" href="tel:0614687714">
-        📞 Piga: 0614 687 714
-      </a>
-
-      <a class="button" href="https://wa.me/255713417714">
-        💬 WhatsApp: 0713 417 714
-      </a>
-    </div>
-
-  </div>
-
-  <div class="footer">
-    © 2026 TMCHIKA Installation Technician
-  </div>
-
+<script>
+function tuma(){
+let j=document.getElementById('jina').value;
+let m=document.getElementById('mtaa').value;
+let h=document.getElementById('huduma').value;
+let ma=document.getElementById('maelezo').value;
+if(!j||!m){alert('Jaza Jina na Mtaa');return;}
+let ujumbe=`Habari TJMC TECH%0AJina:${j}%0AMtaa:${m}%0AHuduma:${h}%0AMaelezo:${ma}`;
+window.open(`https://wa.me/255614687714?text=${ujumbe}`,'_blank');
+}
+</script>
 </body>
-  </html>
+</html>
